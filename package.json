@@ -1,0 +1,21 @@
+{
+  "name": "api_lab",
+  "version": "1.0.0",
+  "description": "Using VK API",
+  "main": "server.js",
+  "scripts": {
+    "test": "console.log('Wonderful! It's working!');",
+    "start": "node server.js"
+  },
+  "author": "Rybova Julia",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "node-static": "^0.7.9"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5"
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Vk vsco search</title>
+	<link rel="shortcut icon" href="D/lab1API/images/favicon.ico"></link>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<!--
+	<link type="text/css" rel="stylesheet" href="styles/styles.css"/>
+	 -->
+	
+	<script type="text/javascript" src="node_modules/handlebars/dist/handlebars.runtime.js"></script>
+	<script type="text/javascript" src="node_modules/handlebars/dist/handlebars.js"></script>
+	<script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="script/prettyDate.js"></script>
+</head>
+<body>
+	<div class="container">
+	  <h1 class="greeting text-center"> Would you like to show photos according to the tag #Vscocam <img src="images/logo1.png"> ?</h1>
+		<h1 class=" text-center"></h1>
+		<div class="loaded-info"></div>
+		<div id="fountainTextG">
+		<div id="fountainTextG_1" class="fountainTextG">L</div>
+		<div id="fountainTextG_2" class="fountainTextG">o</div>
+		<div id="fountainTextG_3" class="fountainTextG">a</div>
+		<div id="fountainTextG_4" class="fountainTextG">d</div>
+		<div id="fountainTextG_5" class="fountainTextG">i</div>
+		<div id="fountainTextG_6" class="fountainTextG">n</div>
+		<div id="fountainTextG_7" class="fountainTextG">g</div>
+		</div>
+
+
+		<div class="col-md-3 col-md-offset-3 search-filter">
+		</div>
+	</div>
+		<script id="photo-entry-template" type="text/x-handlebars-template">
+			<div class="photo-entry">
+				{{#each objects}}
+					<div class="photo-entity">
+						<div class="photo">
+							<img src="{{src_big}}"/>
+						</div>
+						<div class="photo-descr">
+						{{{text}}}
+						</div>
+						<p class="photo-posttime">{{PrettyDate}}</p>
+					</div>
+				{{/each}}
+			</div>
+		</script>
+
+	<script type="text/javascript" src="script/app.js"></script>
+</body>
+</html>
